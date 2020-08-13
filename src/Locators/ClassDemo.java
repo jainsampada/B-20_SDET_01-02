@@ -13,6 +13,7 @@ public class ClassDemo {
 public void check() {
 	path=System.getProperty("user.dir")+"//Driver//chromedriver.exe";
 	System.setProperty("webdriver.chrome.driver", path);
+	//This is setproperty command
 	driver=new ChromeDriver();
 	driver.get("https://opensource-demo.orangehrmlive.com/");
 	ArrayList<WebElement> arr=new ArrayList<WebElement>(driver.findElements(By.className("textInputContainer")));
